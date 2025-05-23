@@ -1,0 +1,26 @@
+
+
+.logo-header{
+  width: 250px;
+}
+
+nav{
+    background-color: white!important;
+}
+
+.icon-container{
+  display: flex;
+  column-gap: 25px;
+}
+
+.icon-container a{
+  font-size: 22px!important;
+}
+
+.header--options:hover{
+  color: #DB1D24!important;
+}
+
+.header--icons:hover{
+    color: #DB1D24!important;
+}
