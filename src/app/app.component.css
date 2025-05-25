@@ -8,3 +8,71 @@ footer{
   padding: 0px 5px;
 }
 
+/* cards*/
+
+.container-mini-buttons{
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.container-mini-buttons button{
+  border-radius: 20px!important;
+}
+
+
+
+#products{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.products-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.card-product-mu{
+  border: 0!important;
+}
+
+.product-name{
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.heart-container{
+  position: absolute;
+  top: 2%;
+  right: 3%;
+
+}
+
+.heart-container a div{
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ededed;
+  color: #494545;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-action-container{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 10px;
+  background-color: #F8F8F8;
+}
+
+.img-container{
+  position: relative;
+}

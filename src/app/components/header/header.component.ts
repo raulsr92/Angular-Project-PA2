@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AppComponent } from '../../app.component';
 
 @Component({
   selector: 'app-header',
@@ -15,4 +16,8 @@ export class HeaderComponent {
                                   `<i class="bi bi-person"></i>`,
                                   `<i class="bi bi-suit-heart"></i>`,
                                   `<i class="bi bi-bag"></i>`]
+
+
+  @Input() contadorProductos: number= 0
+
 }

@@ -1,10 +1,128 @@
 <header>
-  <app-header></app-header>
+  <app-header [contadorProductos]="contadorProductos"></app-header>
 </header>
 
 
 <main>
   <app-carrusel/>
+
+  <section id="products">
+    <div class="container products-container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>End of Season Sale</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center container-mini-buttons" >
+          <button type="button" class="btn btn-dark">Home</button>
+          <button type="button" class="btn btn-dark">Away</button>
+          <button type="button" class="btn btn-dark">Third</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="card card-product-mu" >
+              <a href="#" class="img-container">
+                <img src="/img/product1.jpg" class="card-img-top" alt="...">
+
+                <div class="buttons-action-container"  >
+                  <button type="button" class="btn btn-dark">Customise</button>
+                  <button type="button" class="btn btn-danger" (click)="agregarAlCarrito(1)">Add to bag</button>
+                </div>
+              </a>
+            <div class="card-body">
+              <p class="card-text">{{precioProducto1 | currency}}</p>
+              <p class="product-name">Manchester United 24/25 Home Jersey</p>
+            </div>
+            <div class="heart-container">
+              <a href="">
+                <div>
+                  <i class="bi bi-chat-heart"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card card-product-mu" >
+              <a href="#" class="img-container">
+                <img src="/img/product2.jpg" class="card-img-top" alt="...">
+              <div class="buttons-action-container"  >
+                  <button type="button" class="btn btn-dark">Customise</button>
+                  <button type="button" class="btn btn-danger" (click)="agregarAlCarrito(1)">Add to bag</button>
+                </div>
+              </a>
+            <div class="card-body">
+              <p class="card-text">{{precioProducto2 | currency}}</p>
+              <p class="product-name">Manchester United 24/25 Away Authentic Jersey</p>
+            </div>
+            <div class="heart-container">
+              <a href="">
+                <div>
+                  <i class="bi bi-chat-heart"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card card-product-mu" >
+            <a href="#" class="img-container">
+              <img src="/img/product3.jpg" class="card-img-top" alt="...">
+
+                <div class="buttons-action-container"  >
+                  <button type="button" class="btn btn-dark">Customise</button>
+                  <button type="button" class="btn btn-danger" (click)="agregarAlCarrito(1)">Add to bag</button>
+                </div>
+            </a>
+            <div class="card-body">
+              <p class="card-text">{{precioProducto3 | currency}}</p>
+              <p class="product-name">Manchester United 24/25 Third Jersey</p>
+            </div>
+
+            <div class="heart-container">
+              <a href="">
+                <div>
+                  <i class="bi bi-chat-heart"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card card-product-mu" >
+              <a href="#" class="img-container">
+                <img src="/img/product4.jpg" class="card-img-top" alt="...">
+
+                <div class="buttons-action-container"  >
+                  <button type="button" class="btn btn-dark">Customise</button>
+                  <button type="button" class="btn btn-danger" (click)="agregarAlCarrito(1)">Add to bag</button>
+                </div>
+              </a>
+            <div class="card-body">
+              <!--<h5 class="card-title">Card title</h5>-->
+              <p class="card-text">{{precioProducto4 | currency}}</p>
+              <p class="product-name">Manchester United 24/25 Third Baby Kit</p>
+            </div>
+
+            <div class="heart-container">
+              <a href="">
+                <div>
+                  <i class="bi bi-chat-heart"></i>
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 
