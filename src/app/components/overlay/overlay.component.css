@@ -1,0 +1,39 @@
+.overlay{
+  position: absolute;
+  top:0;
+  bottom:0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0,0.3);
+  z-index: 1;
+  color: white;
+}
+
+.overlay-start, .row{
+  margin-left: 70px!important;
+  height: 100%;
+}
+
+.overlay-content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.btn--overlay{
+  text-transform: uppercase;
+  background-color:#DB1D24!important;
+  color: white!important;
+  padding: 10px 25px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.btn--overlay:hover{
+  background-color:#a54144!important;
+
+}

@@ -1,0 +1,11 @@
+.carousel-section{
+  position: relative;
+}
+
+.boton-next{
+  z-index: 3;
+}
+
+.boton-prev{
+  z-index: 3;
+}

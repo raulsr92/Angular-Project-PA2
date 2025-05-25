@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { OverlayComponent } from '../overlay/overlay.component';
 
 @Component({
   selector: 'app-carrusel',
-  imports: [],
+  imports: [OverlayComponent],
   templateUrl: './carrusel.component.html',
   styleUrl: './carrusel.component.css'
 })
