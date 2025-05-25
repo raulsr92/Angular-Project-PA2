@@ -1,7 +1,7 @@
-<section>
+<section class="footer-section-up">
   <div>
     <p class="title-footer-options">Top Categories</p>
-    <div>
+    <div class="container-footer-options">
       <a href="#" *ngFor="let category of footerCategories">
         {{category}}
       </a>
@@ -10,7 +10,7 @@
 
   <div >
     <p class="title-footer-options">More Categories</p>
-    <div>
+    <div class="container-footer-options">
       <a href="#" *ngFor="let moreCategory of footerMoreCategories">
         {{moreCategory}}
       </a>
@@ -20,7 +20,7 @@
 
   <div >
     <p class="title-footer-options">Customer Care</p>
-    <div>
+    <div class="container-footer-options">
       <a href="#" *ngFor="let care of footerCustomerCare">
         {{care}}
       </a>
@@ -30,7 +30,7 @@
 
   <div >
     <p class="title-footer-options">Explore Manchester United</p>
-    <div>
+    <div class="container-footer-options">
       <a href="" *ngFor="let exploreOption of footerExploreOptions">
         {{exploreOption}}
       </a>
@@ -40,7 +40,7 @@
 
   <div >
     <p class="title-footer-options">Legal</p>
-    <div>
+    <div class="container-footer-options">
       <a href="" *ngFor="let legalOption of footerLegalOptions">
         {{legalOption}}
       </a>
@@ -48,11 +48,11 @@
   </div>
 
   <div>
-    <div>
+    <div class="social-media-container">
       <p class="title-footer-options">Social</p>
-      <div>
-        <div *ngFor="let icon of footerIcons" [innerHTML]="icon">
-          <a href="">
+      <div class="icons-container-socialmedia">
+        <div *ngFor="let icon of footerIcons" >
+          <a href="" [innerHTML]="icon">
             {{icon}}
           </a>
         </div>
@@ -61,12 +61,18 @@
     </div>
 
 
-    <div>
+    <div class="medio-pago-container">
         <p class="title-footer-options">Payment and Delivery</p>
-        <div><img src="/img/mediopago-1.png" class="img-medio-pago" alt=""></div>
-        <div><img src="/img/mediopago-2.png" class="img-medio-pago" alt=""></div>
-        <div><img src="/img/mediopago-3.png" class="img-medio-pago" alt=""></div>
-        <div><img src="/img/mediopago-4.png" class="img-medio-pago" alt=""></div>
+        <div class="icons-container-mediopago">
+          <div><img src="/img/mediopago-1.png" class="img-medio-pago" alt=""></div>
+          <div><img src="/img/mediopago-2.png" class="img-medio-pago" alt=""></div>
+          <div><img src="/img/mediopago-3.png" class="img-medio-pago" alt=""></div>
+          <div><img src="/img/mediopago-4.png" class="img-medio-pago" alt=""></div>
+        </div>
+        <a class="title-footer-options" href="">
+          <i class="bi bi-globe"></i>
+          PE(S/.)
+        </a>
     </div>
   </div>
 
@@ -74,7 +80,7 @@
 </section>
 
 
-<section>
+<section class="footer-section-down">
   <div>
     <img src="/img/logo-footer.png" class="logo-footer" alt="">
   </div>
