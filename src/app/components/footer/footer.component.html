@@ -1,1 +1,84 @@
-<p>footer works!</p>
+<section>
+  <div>
+    <p class="title-footer-options">Top Categories</p>
+    <div>
+      <a href="#" *ngFor="let category of footerCategories">
+        {{category}}
+      </a>
+    </div>
+  </div>
+
+  <div >
+    <p class="title-footer-options">More Categories</p>
+    <div>
+      <a href="#" *ngFor="let moreCategory of footerMoreCategories">
+        {{moreCategory}}
+      </a>
+
+    </div>
+  </div>
+
+  <div >
+    <p class="title-footer-options">Customer Care</p>
+    <div>
+      <a href="#" *ngFor="let care of footerCustomerCare">
+        {{care}}
+      </a>
+
+    </div>
+  </div>
+
+  <div >
+    <p class="title-footer-options">Explore Manchester United</p>
+    <div>
+      <a href="" *ngFor="let exploreOption of footerExploreOptions">
+        {{exploreOption}}
+      </a>
+
+    </div>
+  </div>
+
+  <div >
+    <p class="title-footer-options">Legal</p>
+    <div>
+      <a href="" *ngFor="let legalOption of footerLegalOptions">
+        {{legalOption}}
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <p class="title-footer-options">Social</p>
+      <div>
+        <div *ngFor="let icon of footerIcons" [innerHTML]="icon">
+          <a href="">
+            {{icon}}
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div>
+        <p class="title-footer-options">Payment and Delivery</p>
+        <div><img src="/img/mediopago-1.png" class="img-medio-pago" alt=""></div>
+        <div><img src="/img/mediopago-2.png" class="img-medio-pago" alt=""></div>
+        <div><img src="/img/mediopago-3.png" class="img-medio-pago" alt=""></div>
+        <div><img src="/img/mediopago-4.png" class="img-medio-pago" alt=""></div>
+    </div>
+  </div>
+
+
+</section>
+
+
+<section>
+  <div>
+    <img src="/img/logo-footer.png" class="logo-footer" alt="">
+  </div>
+  <p>
+    © 2025 Manchester United. All rights reserved.
+  </p>
+</section>
